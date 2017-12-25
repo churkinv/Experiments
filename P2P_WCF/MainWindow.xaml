@@ -1,0 +1,44 @@
+﻿<Window x:Class="P2P_WCF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2P_WCF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="682.8" Width="1028.5">
+
+    <Grid>
+        <Button Name ="btn_Send" Content="Send" HorizontalAlignment="Left" Margin="431,611,0,0" VerticalAlignment="Top" Width="105" Click="btn_Send_Click"/>
+        <Label Content="General Chat:" HorizontalAlignment="Left" Margin="464,7,0,0" VerticalAlignment="Top"/>
+        <Label Content="Send Message:" HorizontalAlignment="Left" Margin="461,328,0,0" VerticalAlignment="Top"/>
+        <Label Name="lbl_YourIp" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="349"/>
+        <Label x:Name="lbl_Info" Content="" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="349"/>
+        <Label x:Name="lbl_PCaround" Content="" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="349"/>
+        <Label x:Name="lbl_ThisPCHostName" Content="" Margin="10,103,663.4,0" VerticalAlignment="Top"/>
+        <Button x:Name ="btn_DistrFile" Content="Distribute File" HorizontalAlignment="Left" Margin="431,587,0,0" VerticalAlignment="Top" Width="105" Click="btn_DistrFile_Click"/>
+        <TextBox Name ="txt_Send" HorizontalAlignment="Left" Height="304" Margin="565,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447"/>
+        <Button Name ="btn_RegisterPeer" Content="Register Peer" HorizontalAlignment="Left" Margin="13,404,0,0" VerticalAlignment="Top" Width="78" Click="btn_RegisterPeer_Click"/>
+        <TextBox Name ="txt_PeerName" HorizontalAlignment="Left" Height="23" Margin="13,377,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Peer Name to Register:" HorizontalAlignment="Left" Margin="13,347,0,0" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name ="txt_Port" HorizontalAlignment="Left" Height="23" Margin="13,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Port, used for both TCP and PNRP:" HorizontalAlignment="Left" Margin="13,134,0,0" VerticalAlignment="Top" Width="190"/>
+        <Button Name="btn_TCPserver" Content="Start TCP Server" HorizontalAlignment="Left" Margin="13,193,0,0" VerticalAlignment="Top" Width="190" Click="btn_TCPserver_Click"/>
+        <Button x:Name ="btn_StopPeerRegistration" Content="Stop registration" HorizontalAlignment="Left" Margin="96,404,0,0" VerticalAlignment="Top" Width="107" Click="btn_RegisterPeer_Click"/>
+        <Button x:Name="btn_TCPclient" Content="Connect to TCP Server" HorizontalAlignment="Left" Margin="13,286,0,0" VerticalAlignment="Top" Width="190" Click="btn_TCPclient_Click"/>
+        <TextBox x:Name ="txt_IPAddress" Text ="Please enter IP address for Client!!!" HorizontalAlignment="Left" Height="23" Margin="13,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Enter IP to connect to TCP Server:" HorizontalAlignment="Left" Margin="13,227,0,0" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name ="btn_ResolvePeerName" Content="Resolve Peer Name" HorizontalAlignment="Left" Margin="13,498,0,0" VerticalAlignment="Top" Width="190" Click="btn_RegisterPeer_Click" Height="22"/>
+        <TextBox x:Name ="txt_PeerNameToResolve" HorizontalAlignment="Left" Height="23" Margin="13,471,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Peer Name to Resolve:" HorizontalAlignment="Left" Margin="13,441,0,0" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name ="txt_GeneralChat" HorizontalAlignment="Left" Height="304" Margin="565,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447"/>
+        <GroupBox Header="This panel for Chat" HorizontalAlignment="Left" Height="164" Margin="279,377,0,0" VerticalAlignment="Top" Width="257">
+            <Grid HorizontalAlignment="Left" Height="144" Margin="10,10,-3,-12.4" VerticalAlignment="Top" Width="237">
+                <Button Name="btn_ChatServer" Content="Chat Server" Margin="29,36,28,0" VerticalAlignment="Top" Height="23" RenderTransformOrigin="0.5,0.5" Click="btn_ChatServer_Click"/>
+                <Button Name ="btn_ChatClient" Content="Chat Client" Margin="29,78,28,0" VerticalAlignment="Top" Height="23" RenderTransformOrigin="0.5,0.5" Click="btn_ChatClient_Click"/>
+
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

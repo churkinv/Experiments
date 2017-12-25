@@ -1,0 +1,22 @@
+﻿<Window x:Class="NetworkDataTrasfer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkDataTrasfer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="622.448">
+    <Grid>
+        <Button Name ="btn_StartServer" Content="Start Server" HorizontalAlignment="Left" Margin="25,200,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <TextBox Name="txt_ServerIP" HorizontalAlignment="Left" Height="23" Margin="174,236,0,0" TextWrapping="Wrap" Text="Enter Server IP" VerticalAlignment="Top" Width="120"/>
+        <Button Name ="btn_ConnectToServer" Content="Connect to:" HorizontalAlignment="Left" Margin="25,240,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Label x:Name="lbl_Yourip" Content="" HorizontalAlignment="Left" Margin="25,169,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txt_Info" HorizontalAlignment="Left" Height="148" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+        <TextBox Name ="txt_SendData" HorizontalAlignment="Left" Height="115" Margin="331,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="275"/>
+        <Button Name ="btn_Send" Content="Send" HorizontalAlignment="Left" Margin="25,276,0,0" VerticalAlignment="Top" Width="120" Click="btn_Send_Click"/>
+        <TextBox Name="txt_Port" HorizontalAlignment="Left" Height="23" Margin="174,200,0,0" TextWrapping="Wrap" Text="Port number Server" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_PortToConnect" HorizontalAlignment="Left" Height="23" Margin="174,272,0,0" TextWrapping="Wrap" Text="Port # to connect" VerticalAlignment="Top" Width="120"/>
+        <RadioButton Name ="rbnt_CheckToSendFile" Content="Check to send file" HorizontalAlignment="Left" Margin="340,169,0,0" VerticalAlignment="Top" Width="142" />
+
+    </Grid>
+</Window>
