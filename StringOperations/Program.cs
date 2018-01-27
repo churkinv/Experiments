@@ -26,7 +26,7 @@ namespace StringOperations
             #region String and StringBuilder
             //С помощью функции Split мы можем разделить строку на массив подстрок. 
             //В качестве параметра функция Split принимает массив символов или строк, которые и будут служить разделителями. 
-            //Например, подсчитаем количество слов в сроке, разделив ее по пробельным символам:
+            //Например, подсчитаем количество слов в строке, разделив ее по пробельным символам:
             string[] words = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string str in words)
             {
