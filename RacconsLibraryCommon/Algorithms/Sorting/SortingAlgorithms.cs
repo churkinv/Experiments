@@ -152,8 +152,6 @@ namespace RacconsLibraryCommon
             int newPivot = array[array.Length - 1];
 
 
-
-
         }
 
         #region Helper methods for sorting: swap, merge, partition

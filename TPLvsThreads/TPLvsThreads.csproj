@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C64C029-8F45-464A-A866-0AE794B675D5}</ProjectGuid>
+    <ProjectGuid>{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RichterCLR</RootNamespace>
-    <AssemblyName>RichterCLR</AssemblyName>
+    <RootNamespace>TPLvsThreads</RootNamespace>
+    <AssemblyName>TPLvsThreads</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticMemberDynamicWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

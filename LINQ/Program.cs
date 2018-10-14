@@ -65,7 +65,7 @@ namespace LINQ
             string input = "asssdfdfghghg";
             Console.WriteLine(input.GroupBy(c => c).OrderByDescending(g => g.Count()).First().Key); // to show the most frequent char
 
-            ICollection<Person> list = Person.GetPersons();
+            ICollection<Person> list = Person.GetPersons();           
 
             var query = from c in list
                         where c.Id == 1                        
@@ -123,23 +123,23 @@ namespace LINQ
             return strings;
         }
 
-        public static dynamic GetNamesAndType(List<Person> persons,
-            List<string> parties)
-        {
-            var query = persons.Join(parties,
-                c => c.Name,
-                ct => ct.PersonType,
-                (c, ct) => new
-                {
-                    Name = c.Name + ", " + c.Mail,
-                    PersonType = ct.Type
-                });
-            foreach (var item in query)
-            {
-                Console.WriteLine(item.Name + ": " + item.CustomerTypeName);
-            }
-            return query;
-        }
+        //public static dynamic GetNamesAndType(List<Person> persons,
+        //    List<string> parties)
+        //{
+        //    var query = persons.Join(parties,
+        //        c => c.Name,
+        //        ct => ct.PersonType,
+        //        (c, ct) => new
+        //        {
+        //            Name = c.Name + ", " + c.Mail,
+        //            PersonType = ct.Type
+        //        });
+        //    foreach (var item in query)
+        //    {
+        //        Console.WriteLine(item.Name + ": " + item.CustomerTypeName);
+        //    }
+        //    return query;
+        //}
     }
 
 

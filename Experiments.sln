@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2P_WCF", "P2P_WCF\P2P_WCF.csproj", "{DAAD8A4C-6F82-4CC7-849C-898849C9A8DD}"
 EndProject
@@ -42,6 +42,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "I.O.andFiles", "I.O.andFiles\I.O.andFiles.csproj", "{61B186D9-90DA-4117-B724-82D120A55DA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringOperations", "StringOperations\StringOperations.csproj", "{8F00B266-6BF6-4696-84FA-883235491BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadingWpf", "MultiThreadingWpf\MultiThreadingWpf.csproj", "{DDE4046E-477C-444D-955B-AC927EB07EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLvsThreads", "TPLvsThreads\TPLvsThreads.csproj", "{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposable and GC", "IDisposable and GC\IDisposable and GC.csproj", "{00D28099-E475-4A10-B63E-8AE6EDAD4B04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +131,18 @@ Global
 		{8F00B266-6BF6-4696-84FA-883235491BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F00B266-6BF6-4696-84FA-883235491BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F00B266-6BF6-4696-84FA-883235491BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE4046E-477C-444D-955B-AC927EB07EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE4046E-477C-444D-955B-AC927EB07EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE4046E-477C-444D-955B-AC927EB07EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE4046E-477C-444D-955B-AC927EB07EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A86530-01D7-4485-AD4C-B8C3F73FF2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D28099-E475-4A10-B63E-8AE6EDAD4B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D28099-E475-4A10-B63E-8AE6EDAD4B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D28099-E475-4A10-B63E-8AE6EDAD4B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D28099-E475-4A10-B63E-8AE6EDAD4B04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

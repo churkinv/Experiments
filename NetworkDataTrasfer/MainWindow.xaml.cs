@@ -171,8 +171,6 @@ namespace NetworkDataTrasfer
                     server.Stop();
             }
 
-
-
         }
 
     }

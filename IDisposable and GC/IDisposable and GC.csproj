@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C64C029-8F45-464A-A866-0AE794B675D5}</ProjectGuid>
+    <ProjectGuid>{00D28099-E475-4A10-B63E-8AE6EDAD4B04}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RichterCLR</RootNamespace>
-    <AssemblyName>RichterCLR</AssemblyName>
+    <RootNamespace>IDisposable_and_GC</RootNamespace>
+    <AssemblyName>IDisposable and GC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticMemberDynamicWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

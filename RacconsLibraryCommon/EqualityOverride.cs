@@ -103,6 +103,7 @@ namespace RacconsLibraryCommon
         //    return object.Equals(x, y); // the same as in the base class
         //}
 
+        
         //public static bool operator != (DerivedClass x, DerivedClass y)//(4) override !=. Static object.Equals()does bull-checking then calls virtual Equals();
         //{
         //    return !object.Equals(x, y); // the same as in the base class

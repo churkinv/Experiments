@@ -42,15 +42,44 @@ namespace RichterCLR
             // В других языках (таких как Visual Basic) компилятор не потребует
             // явного приведения
             //Employee e = (Employee)o;
+
+            // test on type casting
+
+            Object o1 = new Object();
+            Object o2 = new B();
+            Object o3 = new D();
+            Object o4 = o3;
+
+            B b1 = new B();
+            B b2 = new D();
+            D d1 = new D();
+
+            //B b3 = new Object(); //CTE
+            //D d2 = new Object(); //CTE
+
+            B b4 = d1;
+
+            //D d3 = b2;   //CTE
+
+            D d4 = (D)d1;
+            D d5 = (D)b2;
+
+            //D d6 = (D)b1; // RTE
+            //B b5 = (B)o1; // RTE
+
+            B b6 = (D)b2; 
+
+            Console.WriteLine(b6.ToString());
+                                 
             #endregion
 
             #region Chapter 5 primitive type dynamic
             // Пример вызова статического метода Concat(String,
             // String) класса String:
-            dynamic stringType = new StaticMemberDynamicWrapper(typeof(String));
-            var r = stringType.Concat("A", "B"); // Динамический вызов статического
-                                                 // метода Concat класса String
-            Console.WriteLine(r); // выводится "AB"
+            //dynamic stringType = new StaticMemberDynamicWrapper(typeof(String));
+            //var r = stringType.Concat("A", "B"); // Динамический вызов статического
+            //                                     // метода Concat класса String
+            //Console.WriteLine(r); // выводится "AB"
             #endregion
             Console.ReadLine();
         }
@@ -73,6 +102,16 @@ namespace RichterCLR
     #region Chapter 4 Types
     // Этот тип неявно наследует от типа System.Object
     internal class Employee
+    {
+
+    }
+
+    // Базовый класс
+    internal class B
+    {
+    }
+    // Производный класс
+    internal class D : B
     {
 
     }

@@ -39,15 +39,15 @@ namespace RichterCLR
             if (prop != null) { prop.SetValue(null, value, null); return true; }
             return false;
         }
-        public override Boolean TryInvokeMember(InvokeMemberBinder binder, Object[]
-        args, out Object result)
-        {
+        //public override Boolean TryInvokeMember(InvokeMemberBinder binder, Object[]
+        //args, out Object result)
+        //{
             
-            MethodInfo method = FindMethod(binder.Name, args); //FindMethod(binder.Name);
-            if (method == null) { result = null; return false; }
-            result = method.Invoke(null, args);
-            return true;
-        }
+        //    //MethodInfo method = FindMethod(binder.Name, args); //FindMethod(binder.Name);
+        //    //if (method == null) { result = null; return false; }
+        //    //result = method.Invoke(null, args);
+        //    //return true;
+        //}
 
         private MethodInfo FindMethod(String name, Type[] paramTypes)
         {
